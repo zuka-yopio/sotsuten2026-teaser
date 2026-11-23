@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第17回 宝塚大学 卒業修了制作展</title>
+  <meta name="description" content="第17回 宝塚大学 卒業修了制作展｜2027年2月6日(土)・7日(日) 宝塚大学 東京新宿キャンパスにて開催。入場無料。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ヘッダー / グローバルナビ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <nav class="gnav" aria-label="グローバルナビゲーション">
+        <ul class="gnav__list">
+          <li><a href="#info">開催概要</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <h1 class="header__logo">
+        <a href="#top"><img src="assets/logo_full.svg" alt="第17回 宝塚大学 卒業修了制作展" width="1138" height="218"></a>
+      </h1>
+      <a class="header__x" href="https://x.com/takara_sotsuten" target="_blank" rel="noopener" aria-label="卒展公式X">
+        <img src="assets/icons/X-logo.svg" alt="" width="40" height="37">
+      </a>
+      <button class="hamburger" id="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="spMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- SP：追従時のハンバーガーメニュー -->
+    <nav class="sp-menu" id="spMenu" aria-label="メニュー" aria-hidden="true">
+      <ul class="sp-menu__list">
+        <li><a href="#info">開催概要</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+        <li>
+          <a href="https://x.com/takara_sotsuten" target="_blank" rel="noopener" class="sp-menu__x">
+            卒展公式<img src="assets/icons/X-logo.svg" alt="X">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SP：FV以降に追従するボタン -->
+  <a class="float-x" href="https://x.com/takara_sotsuten" target="_blank" rel="noopener">
+    卒展公式<img src="assets/icons/X-logo_white.svg" alt="X">
+  </a>
+  <a class="pagetop" href="#top" aria-label="ページの先頭へ戻る">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+
+  <main id="top">
+    <!-- メインビジュアル -->
+    <section class="fv" id="fv">
+      <div class="fv__visual" aria-hidden="true">
+        <picture class="fv__layer fv__layer--back">
+          <source media="(max-width: 767px)" srcset="assets/visual/sp-visual_back.png">
+          <img src="assets/visual/pc-visual_back.png" alt="">
+        </picture>
+        <picture class="fv__layer fv__layer--middle">
+          <source media="(max-width: 767px)" srcset="assets/visual/sp-visual_middle.png">
+          <img src="assets/visual/pc-visual_middle.png" alt="">
+        </picture>
+        <picture class="fv__layer fv__layer--front">
+          <source media="(max-width: 767px)" srcset="assets/visual/sp-visual_front.png">
+          <img src="assets/visual/pc-visual_front.png" alt="">
+        </picture>
+      </div>
+
+      <div class="fv__bottom">
+        <p class="fv__date">
+          <span class="visually-hidden">2027年2月6日(土)〜2月7日(日)</span>
+          <img class="fv__date-year" src="assets/day/2027.svg" alt="">
+          <img class="fv__date-day1" src="assets/day/0206.svg" alt="">
+          <span class="fv__date-row">
+            <span class="fv__date-bar"></span>
+            <img class="fv__date-day2" src="assets/day/0207.svg" alt="">
+          </span>
+        </p>
+
+        <a class="fv__sns" href="https://x.com/takara_sotsuten" target="_blank" rel="noopener">
+          <span class="fv__sns-lead">最新情報はこちら</span>
+          <span class="fv__sns-main">
+            卒展公式
+            <img class="fv__sns-x" src="assets/icons/X-logo_white.svg" alt="X">
+            <img class="fv__sns-link" src="assets/icons/link-icon.svg" alt="">
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 写真スクロール -->
+    <div class="scroll-img" aria-label="過去の卒展の様子">
+      <ul class="scroll-img__track" id="scrollTrack">
+        <li><img src="assets/photo/23卒展_94A0102.jpg" alt="" loading="lazy"></li>
+        <li><img src="assets/photo/23卒展_94A0114.jpg" alt="" loading="lazy"></li>
+        <li><img src="assets/photo/23卒展_94A0135.jpg" alt="" loading="lazy"></li>
+        <li><img src="assets/photo/23卒展_94A0141.jpg" alt="" loading="lazy"></li>
+        <li><img src="assets/photo/IMG_0751.jpg" alt="" loading="lazy"></li>
+        <li><img src="assets/photo/IMG_5322.jpg" alt="" loading="lazy"></li>
+        <li><img src="assets/photo/IMG_5415.jpg" alt="" loading="lazy"></li>
+        <li><img src="assets/photo/画像--20260207-031105-137cb6c2.jpg" alt="" loading="lazy"></li>
+        <li><img src="assets/photo/画像--20260207-031553-451d2401.jpg" alt="" loading="lazy"></li>
+      </ul>
+    </div>
+
+    <!-- 開催概要・アクセス -->
+    <section class="section info" id="info">
+      <h2 class="section__title">
+        <span class="section__title-ja">開催概要・アクセス</span>
+        <span class="section__title-en">Information</span>
+      </h2>
+
+      <div class="info__body">
+        <div class="info__row">
+          <div class="info__text">
+            <div class="info__group">
+              <p>〒160-0023 東京都新宿区西新宿7丁目11番1号</p>
+              <p>●JR・都営地下鉄・小田急線・京王線「新宿」駅西口から徒歩5分</p>
+              <p>●西武新宿線「西武新宿」駅から徒歩4分</p>
+            </div>
+            <div class="info__group">
+              <p>名称：第17回宝塚大学 卒業修了制作展</p>
+              <p>日時：2027/2/6(sat)-7(sun) 10:00~17:00</p>
+              <p>会場：宝塚大学 東京新宿キャンパス</p>
+            </div>
+            <p>入場料無料</p>
+          </div>
+
+          <div class="info__map">
+            <iframe
+              src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E8%A5%BF%E6%96%B0%E5%AE%BF7%E4%B8%81%E7%9B%AE11%E7%95%AA1%E5%8F%B7&z=16&output=embed"
+              title="宝塚大学 東京新宿キャンパスの地図"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="info__notice">
+          <p class="info__notice-title">ご来場にあたって皆様へのお願い</p>
+          <ul class="info__notice-list">
+            <li>会場内での飲食はご遠慮ください</li>
+            <li>混雑時は入場制限を設ける場合がございます</li>
+            <li>当日のご来場は、電車・バスなどの公共交通機関をご利用ください（大学敷地内に駐輪・駐車スペースはありません）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section class="section contact" id="contact">
+      <h2 class="section__title">
+        <span class="section__title-ja">お問い合わせ</span>
+        <span class="section__title-en">Contact</span>
+      </h2>
+
+      <div class="contact__body">
+        <p class="contact__text">
+          本展に関するご質問は、お問い合わせフォームよりお寄せください。<br>お問い合わせ内容によっては、回答までにお時間をいただく場合がございます。
+        </p>
+        <a class="contact__btn" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=jhhRJwxDNk2Zi2ctqdy86w1tO-fN3BxPsmB-PPwOmfFUMkJSVzhRWDRZMlU4UlgwRkwxRVI3VVZMOS4u" target="_blank" rel="noopener">お問い合わせ</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="footer__logo" href="https://www.takara-univ.ac.jp/tokyo/" target="_blank" rel="noopener">
+        <img src="assets/images/takara-univ_logo.png" alt="宝塚大学 東京メディア芸術学部" width="202" height="73">
+      </a>
+      <address class="footer__address">
+        宝塚大学 東京メディア芸術学部・大学院<br>
+        〒160-0023 東京都新宿区西新宿7丁目11番1号<br>
+        TEL：03-3367-3411 URL:http://www.takara-univ.ac.jp
+      </address>
+      <p class="footer__copy"><small>Copyrights &copy;Takarazuka University. All Rights Reserved.</small></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
