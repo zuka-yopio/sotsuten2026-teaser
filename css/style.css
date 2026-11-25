@@ -93,10 +93,11 @@ a { color: inherit; text-decoration: none; }
 .header__logo {
   position: absolute;
   top: calc(37 * var(--u) + 10px);
-  left: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: calc(1138 * var(--u));
-  transform: translateX(-50%);
-  transition: width .5s var(--ease), top .5s var(--ease), transform .5s var(--ease);
+  transition: width .5s var(--ease), top .5s var(--ease);
   pointer-events: none;
 }
 .header__logo a { display: block; pointer-events: auto; }
@@ -109,9 +110,9 @@ a { color: inherit; text-decoration: none; }
   animation: headerSlideDown .5s var(--ease) both;
 }
 .header.is-fixed .header__logo {
-  top: 50%;
+  /* ロゴ比率 1138:218 から高さを算出して上下中央に */
+  top: calc((var(--header-h) - 230px * 218 / 1138) / 2);
   width: 230px;
-  transform: translate(-50%, -50%);
 }
 
 /* SP専用パーツ（PCでは非表示） */
@@ -171,7 +172,7 @@ a { color: inherit; text-decoration: none; }
 .is-loaded .header__logo,
 .is-loaded .fv__bottom {
   opacity: 1;
-  transition: opacity 1.2s var(--ease) 2.3s, width .5s var(--ease), top .5s var(--ease), transform .5s var(--ease);
+  transition: opacity 1.2s var(--ease) 2.3s, width .5s var(--ease), top .5s var(--ease);
 }
 .is-loaded .header.is-fixed .header__logo { transition-delay: 0s; }
 
@@ -446,6 +447,7 @@ a { color: inherit; text-decoration: none; }
   }
   /* 追従時：ロゴは中央で拡大、ナビ・XはハンバーガーMenuへ */
   .header.is-fixed .header__logo {
+    top: calc((var(--header-h) - 134px * 218 / 1138) / 2);
     width: 134px;
   }
   .header.is-fixed .gnav,
@@ -631,8 +633,8 @@ a { color: inherit; text-decoration: none; }
 ========================================================= */
 @media (prefers-reduced-motion: reduce) {
   .fv__layer,
-  .header__logo,
   .fv__bottom { transition: none !important; opacity: 1; transform: none; }
+  .header__logo { transition: none !important; opacity: 1; }
   .header.is-fixed { animation: none; }
   .scroll-img__track { animation-duration: 180s; }
 }
